@@ -3,7 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: process.env.GITHUB_ACTIONS === "true" && process.env.GITHUB_REPOSITORY?.split("/")[1] && !process.env.GITHUB_REPOSITORY.split("/")[1].endsWith(".github.io") ? `/${process.env.GITHUB_REPOSITORY.split("/")[1]}` : "",
+  images: {
+    unoptimized: true,
+  },
+  // kwikflow.io is a custom domain, so assets must be served from the root ("/")
+  basePath: process.env.BASE_PATH || "",
 };
 
 export default nextConfig;
