@@ -100,8 +100,8 @@ export default function PrivacyPolicy() {
                 <span className="font-bold text-[#111111]">Contact our privacy team:</span>
                 <p className="mt-1 text-[#5F5F58]">
                   For questions about this policy or your store data, reach out directly to{" "}
-                  <a href="mailto:support@kwikflow.app" className="font-semibold text-[#111111] underline">
-                    support@kwikflow.app
+                  <a href="mailto:support@kwikflow.io" className="font-semibold text-[#111111] underline">
+                    support@kwikflow.io
                   </a>
                   .
                 </p>

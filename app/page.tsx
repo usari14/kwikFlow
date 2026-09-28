@@ -1,6 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { KwikFlowLogo, KwikFlowMark } from "./components/Logo";
+import { KwikFlowLogo } from "./components/Logo";
+
+const SHOPIFY_APP_URL =
+  "https://apps.shopify.com/kwikflow-ai?search_id=67147e87-c79a-4bcb-a2f8-1fa8f0937203&surface_detail=kwikflow&surface_inter_position=1&surface_intra_position=1&surface_type=search";
+const SUPPORT_EMAIL = "support@kwikflow.io";
 
 export default function Home() {
   return (
@@ -29,13 +33,15 @@ export default function Home() {
 
           <div className="flex items-center gap-3">
             <a
-              href="mailto:support@kwikflow.app"
+              href={`mailto:${SUPPORT_EMAIL}`}
               className="hidden text-sm font-semibold text-[#5F5F58] hover:text-[#111111] sm:inline-block"
             >
               Contact support
             </a>
             <a
-              href="mailto:support@kwikflow.app?subject=KwikFlow%20Early%20Access"
+              href={SHOPIFY_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               Get KwikFlow →
@@ -71,7 +77,9 @@ export default function Home() {
 
                 <div className="mt-8 flex flex-col gap-3.5 sm:flex-row sm:items-center">
                   <a
-                    href="mailto:support@kwikflow.app?subject=Start%20Recovering%20Carts"
+                    href={SHOPIFY_APP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-primary text-[15px]"
                   >
                     Start recovering carts →
@@ -202,7 +210,9 @@ export default function Home() {
                         Ready for instant follow-up via Email, SMS or WhatsApp
                       </div>
                       <a
-                        href="mailto:support@kwikflow.app"
+                        href={SHOPIFY_APP_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-xs font-bold text-[#111111] hover:underline"
                       >
                         Inspect Draft Order →
@@ -521,13 +531,15 @@ export default function Home() {
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
                   <a
-                    href="mailto:support@kwikflow.app?subject=Get%20Started%20With%20KwikFlow"
+                    href={SHOPIFY_APP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-primary h-[48px] px-6 text-base"
                   >
                     Install KwikFlow for Shopify →
                   </a>
                   <a
-                    href="mailto:support@kwikflow.app"
+                    href={`mailto:${SUPPORT_EMAIL}?subject=Operational%20Demo%20Request`}
                     className="inline-flex h-[48px] items-center justify-center rounded-[8px] border border-white/20 px-5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
                   >
                     Schedule an operational demo
@@ -566,14 +578,22 @@ export default function Home() {
               <a href="#features" className="hover:text-[#111111] transition-colors">
                 Features
               </a>
+              <a
+                href={SHOPIFY_APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#111111] transition-colors"
+              >
+                Shopify App
+              </a>
               <Link href="/privacy-policy" className="hover:text-[#111111] transition-colors">
                 Privacy Policy
               </Link>
               <a
-                href="mailto:support@kwikflow.app"
-                className="hover:text-[#111111] transition-colors"
+                href={`mailto:${SUPPORT_EMAIL}`}
+                className="hover:text-[#111111] transition-colors font-mono"
               >
-                support@kwikflow.app
+                {SUPPORT_EMAIL}
               </a>
             </div>
           </div>
