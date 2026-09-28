@@ -6,7 +6,13 @@ export const metadata: Metadata = {
   description:
     "KwikFlow automates high-intent abandoned checkout recovery for Shopify stores by converting carts into review-ready draft orders.",
   icons: {
-    icon: "/logo-transparent.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
