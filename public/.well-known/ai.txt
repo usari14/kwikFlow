@@ -1,0 +1,12 @@
+# AI Permissions and Machine Access Manifest for KwikFlow
+User-agent: *
+Allow: /
+
+# Canonical AI Context Files
+llms-txt: https://kwikflow.io/llms.txt
+llms-full-txt: https://kwikflow.io/llms-full.txt
+ai-summary: https://kwikflow.io/ai/summary.json
+ai-faq: https://kwikflow.io/ai/faq.json
+ai-service: https://kwikflow.io/ai/service.json
+sitemap: https://kwikflow.io/sitemap.xml
+contact: support@kwikflow.io

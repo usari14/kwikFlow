@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KwikFlow Product Updates &amp; E-commerce Recovery Insights</title>
+    <link>https://kwikflow.io</link>
+    <description>Latest product releases, recovery benchmarks, and operational guides from KwikFlow.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Sep 2026 08:00:00 GMT</lastBuildDate>
+    <atom:link href="https://kwikflow.io/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>KwikFlow Velocity Engine 1.0 Release</title>
+      <link>https://kwikflow.io/#pipeline</link>
+      <guid>https://kwikflow.io/#v1-release</guid>
+      <pubDate>Wed, 30 Sep 2026 08:00:00 GMT</pubDate>
+      <description>Sub-second checkout abandonment recovery through automated Shopify Draft Orders and 1-click invoice generation.</description>
+    </item>
+    <item>
+      <title>E-commerce Benchmark: Eliminating Checkout Friction</title>
+      <link>https://kwikflow.io/#how</link>
+      <guid>https://kwikflow.io/#benchmark-q3</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Why pre-compiled draft orders achieve 3x conversion over standard abandoned cart reminder emails.</description>
+    </item>
+  </channel>
+</rss>

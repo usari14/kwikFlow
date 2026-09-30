@@ -1,0 +1,30 @@
+{
+  "service": "KwikFlow Checkout Recovery System",
+  "provider": {
+    "name": "KwikFlow",
+    "url": "https://kwikflow.io",
+    "email": "support@kwikflow.io"
+  },
+  "serviceType": "E-commerce Automation Software",
+  "platform": "Shopify",
+  "capabilities": [
+    {
+      "name": "Real-time Checkout Abandonment Detection",
+      "description": "Monitors checkout events and filters qualified buyers based on customer contact data and cart value thresholds."
+    },
+    {
+      "name": "Automated Shopify Draft Order Generation",
+      "description": "Compiles customer shipping, items, variants, and dynamic recovery discounts into a native Shopify Draft Order in ~1.2 seconds."
+    },
+    {
+      "name": "One-Click Checkout Invoicing",
+      "description": "Produces pre-authenticated checkout links ready for multi-channel recovery over Email, SMS, Gorgias, and WhatsApp."
+    },
+    {
+      "name": "Intelligent Inventory Protection",
+      "description": "Configurable stock reservation rules that safeguard high-velocity catalog inventory without risk of overselling."
+    }
+  ],
+  "termsOfService": "https://kwikflow.io/privacy-policy/",
+  "documentation": "https://kwikflow.io/llms-full.txt"
+}

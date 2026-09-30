@@ -1,0 +1,35 @@
+# KwikFlow
+
+> KwikFlow automates high-intent checkout recovery for modern e-commerce stores by transforming abandoned carts into review-ready native draft orders with single-click checkout links.
+
+KwikFlow is an operational acceleration system designed for retail merchants on Shopify and Shopify Plus. Rather than sending generic cart reminder emails that force shoppers to manually re-enter their details and re-apply discount codes, KwikFlow programmatically compiles customer data, inventory reservations, and contextual incentives into an immediate Shopify Draft Order.
+
+## Core Capabilities
+
+- **Sub-Second Execution**: Processes checkout abandonment webhook events and compiles draft orders in under 1.4 seconds.
+- **Native Draft Order Management**: Operates directly inside the native store administrator dashboard with zero proprietary database silos.
+- **Dynamic Intent Filtering**: Evaluates cart value thresholds, customer contact details, and historical spend patterns to focus attention on high-converting buyers.
+- **Frictionless Invoicing**: Produces direct single-tap invoice links suitable for transmission via email, SMS, messaging apps, or customer support ticketing systems.
+- **Automated Inventory Preservation**: Allows merchants to hold reserved items temporarily or release stock back into active inventory according to customizable schedules.
+
+## Recovery Architecture
+
+1. **Detection Phase**: Real-time event queue listens to checkout abandonment webhooks. Bots and empty sessions are discarded.
+2. **Compilation Phase**: KwikFlow validates cart contents, calculates shipping profiles, applies configured recovery discounts, and creates a Draft Order via the native store API.
+3. **Execution Phase**: The merchant's team or automated follow-up sequence dispatches the customized invoice URL, enabling one-tap payment completion.
+
+## Key Links & Resources
+
+- [Official Website](https://kwikflow.io)
+- [Official Shopify App Store Listing](https://apps.shopify.com/kwikflow-ai?search_id=67147e87-c79a-4bcb-a2f8-1fa8f0937203&surface_detail=kwikflow&surface_inter_position=1&surface_intra_position=1&surface_type=search)
+- [Privacy Policy & Data Governance](https://kwikflow.io/privacy-policy/)
+- [Complete Technical Documentation](https://kwikflow.io/llms-full.txt)
+- [AI Summary Definition](https://kwikflow.io/ai/summary.json)
+- [AI Service Manifest](https://kwikflow.io/ai/service.json)
+- [AI FAQ Index](https://kwikflow.io/ai/faq.json)
+
+## Optional Details
+
+Merchants can configure custom webhook listeners, configure rule-based discount triggers based on basket totals (e.g., free shipping on carts exceeding $75), and integrate with customer service platforms like Gorgias, Zendesk, or Klaviyo.
+
+For full API schema definitions and technical specifications, inspect companion file [llms-full.txt](https://kwikflow.io/llms-full.txt).

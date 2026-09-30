@@ -1,0 +1,17 @@
+{
+  "name": "KwikFlow",
+  "legalName": "KwikFlow Technologies",
+  "url": "https://kwikflow.io",
+  "logo": "https://kwikflow.io/icon.png",
+  "description": "KwikFlow automates high-intent abandoned checkout recovery for Shopify stores by converting abandoned carts into review-ready draft orders with single-click checkout links.",
+  "category": "E-commerce Automation",
+  "subCategory": "Cart Recovery & Draft Orders",
+  "targetAudience": "E-commerce merchants, retail brands, operations teams",
+  "supportedPlatforms": ["Shopify", "Shopify Plus"],
+  "contact": {
+    "email": "support@kwikflow.io",
+    "url": "https://kwikflow.io"
+  },
+  "appStoreUrl": "https://apps.shopify.com/kwikflow-ai?search_id=67147e87-c79a-4bcb-a2f8-1fa8f0937203&surface_detail=kwikflow&surface_inter_position=1&surface_intra_position=1&surface_type=search",
+  "dateModified": "2026-09-30"
+}

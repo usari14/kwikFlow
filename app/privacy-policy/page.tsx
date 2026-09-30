@@ -5,6 +5,9 @@ import { KwikFlowLogo } from "../components/Logo";
 export const metadata = {
   title: "Privacy Policy | KwikFlow",
   description: "Privacy Policy and data governance standards for the KwikFlow Shopify automation app.",
+  alternates: {
+    canonical: "https://kwikflow.io/privacy-policy/",
+  },
 };
 
 export default function PrivacyPolicy() {

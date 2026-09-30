@@ -1,0 +1,31 @@
+{
+  "title": "KwikFlow Frequently Asked Questions",
+  "url": "https://kwikflow.io",
+  "lastUpdated": "2026-09-30",
+  "faqs": [
+    {
+      "question": "What is KwikFlow?",
+      "answer": "KwikFlow is an e-commerce automation application for Shopify merchants that detects high-intent abandoned carts and programmatically transforms them into review-ready Shopify Draft Orders with one-click direct checkout links."
+    },
+    {
+      "question": "How does KwikFlow differ from traditional abandoned cart recovery emails?",
+      "answer": "Traditional cart emails direct shoppers back to an empty or unauthenticated cart where they must re-enter details, re-select shipping, and manually input discount codes. KwikFlow creates a native Shopify Draft Order with line items, pre-applied incentives, and customer shipping pre-filled, allowing the customer to complete payment with a single tap."
+    },
+    {
+      "question": "How fast does KwikFlow generate draft orders?",
+      "answer": "KwikFlow compiles and generates draft orders in an average of 1.2 seconds following checkout abandonment webhook ingestion."
+    },
+    {
+      "question": "Does KwikFlow reserve inventory for pending draft orders?",
+      "answer": "Yes, merchants can configure custom inventory reservation rules to lock stock during active recovery windows or automatically release items back to the general pool after a customizable period."
+    },
+    {
+      "question": "How long does setup take and does it require developer code?",
+      "answer": "Setup takes under 3 minutes with zero custom theme code. KwikFlow installs directly via the Shopify App Store and integrates natively with Shopify's Draft Order API."
+    },
+    {
+      "question": "Can KwikFlow draft links be sent through SMS, WhatsApp, and customer support desks?",
+      "answer": "Yes. Each created draft order includes a direct, single-use checkout link that your team can share across Klaviyo flows, Gorgias tickets, Zendesk, WhatsApp Business, or direct customer emails."
+    }
+  ]
+}
