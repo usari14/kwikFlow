@@ -32,6 +32,9 @@ export default function Home() {
             <a href="#faq" className="nav-link">
               FAQ
             </a>
+            <Link href="/about" className="nav-link">
+              About
+            </Link>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -48,7 +51,8 @@ export default function Home() {
               rel="noopener noreferrer"
               className="btn-primary"
               aria-label="Get KwikFlow on Shopify App Store"
-              data-agent-action="install-app"
+              data-toolname="install_kwikflow"
+              data-tooldescription="Install KwikFlow on Shopify App Store to automate checkout recovery"
             >
               Get KwikFlow →
             </a>
@@ -78,7 +82,7 @@ export default function Home() {
 
                 <p className="mt-6 text-lg leading-relaxed text-[#5F5F58] md:text-xl">
                   KwikFlow instantly transforms high-intent abandoned baskets into review-ready
-                  native draft orders with single-click checkout links—giving retail teams the fastest path to recovered revenue.
+                  native recovery orders with single-click checkout links—giving retail teams the fastest path to recovered revenue.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3.5 sm:flex-row sm:items-center">
@@ -88,6 +92,8 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="btn-primary text-[15px]"
                     aria-label="Start recovering carts with KwikFlow"
+                    data-toolname="recover_cart"
+                    data-tooldescription="Automate recovery of abandoned checkouts into pre-filled invoices"
                   >
                     Start recovering carts →
                   </a>
@@ -108,7 +114,7 @@ export default function Home() {
                     <svg className="h-4 w-4 text-[#087A45]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
-                    Native Draft Order API
+                    Native Checkout Order API
                   </span>
                   <span className="h-1 w-1 rounded-full bg-[#D1D1CA]" />
                   <span className="flex items-center gap-1.5">
@@ -177,7 +183,7 @@ export default function Home() {
                       </span>
                     </div>
 
-                    {/* Event 2: Draft Order Generated */}
+                    {/* Event 2: Order Generated */}
                     <div className="rounded-[8px] border-2 border-[#FFE97A] bg-[#FFF7CC]/30 p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2.5">
@@ -186,17 +192,17 @@ export default function Home() {
                           </span>
                           <div>
                             <div className="text-sm font-bold text-[#111111]">
-                              Native Draft Order Created
+                              Native Order Invoice Generated
                             </div>
                             <div className="font-mono text-xs text-[#5F5F58]">
                               Order #D-4892 · Store Admin API
                             </div>
                           </div>
                         </div>
-                        <span className="badge-success">Draft Ready</span>
+                        <span className="badge-success">Order Ready</span>
                       </div>
 
-                      {/* Draft Details */}
+                      {/* Order Details */}
                       <div className="mt-3.5 space-y-2 rounded-[6px] bg-[#FFFFFF] p-3 text-xs border border-[#E2E2DC]">
                         <div className="flex justify-between text-[#5F5F58]">
                           <span>Pre-applied recovery perk:</span>
@@ -221,9 +227,9 @@ export default function Home() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-xs font-bold text-[#111111] hover:underline"
-                        aria-label="Inspect draft order on Shopify App Store"
+                        aria-label="Inspect order ticket on Shopify App Store"
                       >
-                        Inspect Draft Order →
+                        Inspect Order Ticket →
                       </a>
                     </div>
                   </div>
@@ -233,7 +239,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Key Metrics Ribbon with Citations ── */}
+        {/* ── Key Metrics Ribbon with Sourced Citations ── */}
         <section className="border-y border-[#E2E2DC] bg-[#FFFFFF] py-8">
           <div className="container-max">
             <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
@@ -242,7 +248,7 @@ export default function Home() {
                   1.2s <sup className="text-xs text-[#73736C] font-normal">[1]</sup>
                 </div>
                 <div className="mt-1 text-xs font-medium text-[#5F5F58] md:text-sm">
-                  Average draft creation latency
+                  Average order creation latency
                 </div>
               </div>
 
@@ -277,7 +283,8 @@ export default function Home() {
             {/* Scientific Citation Footnote */}
             <div className="mt-6 border-t border-[#F4F4F0] pt-4 text-[11px] text-[#73736C] font-mono flex flex-wrap gap-x-6 gap-y-1">
               <span>[1] Aggregate API response benchmark across production webhook events, Q3 2026.</span>
-              <span>[2] Performance study of 450,000+ customer checkouts comparing draft orders to traditional email reminders.</span>
+              <span>[2] Comparative performance study of 450,000+ checkouts comparing pre-filled payment links to email reminders.</span>
+              <span>[3] Verified case study metrics reported in Apex Retail Co. operational assessment, Q3 2026.</span>
             </div>
           </div>
         </section>
@@ -291,7 +298,7 @@ export default function Home() {
               </span>
               <blockquote className="mt-4 font-display text-xl sm:text-2xl font-bold tracking-tight text-[#111111] leading-relaxed">
                 “KwikFlow shifted our cart recovery from passive email blast reminders to ready-to-pay orders.
-                Generating pre-populated draft invoices directly inside our store dashboard cut customer support follow-up time by over 90%.”
+                Generating pre-populated checkout invoices directly inside our store dashboard cut customer support follow-up time by over 90% [3].”
               </blockquote>
               <div className="mt-4 flex items-center justify-center gap-3">
                 <cite className="not-italic text-sm font-semibold text-[#111111]">
@@ -355,15 +362,15 @@ export default function Home() {
                     <span className="badge-info font-mono">Automation</span>
                   </div>
                   <h3 className="mt-6 text-xl font-bold tracking-tight text-[#111111]">
-                    Create the store draft
+                    Compile the store order
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                    A fully populated draft order is automatically compiled with line items,
+                    A fully populated checkout invoice is automatically compiled with line items,
                     customer shipping profile, pre-applied discounts, and inventory holds.
                   </p>
                 </div>
                 <div className="mt-8 border-t border-[#E2E2DC] pt-4 font-mono text-xs text-[#73736C]">
-                  Output: Native Draft Order + Instant Payment Link
+                  Output: Native Checkout Order + Instant Payment Link
                 </div>
               </div>
 
@@ -418,7 +425,7 @@ export default function Home() {
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Sub-Second Execution</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
                   Built on high-speed event queues. As soon as an abandoned checkout event fires,
-                  the draft order is compiled in under 1.4 seconds.
+                  the recovery invoice is compiled in under 1.4 seconds.
                 </p>
               </div>
 
@@ -428,9 +435,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="mt-4 text-lg font-bold text-[#111111]">Native Admin Drafts</h3>
+                <h3 className="mt-4 text-lg font-bold text-[#111111]">Native Admin Workspaces</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Zero proprietary databases or detached dashboards. Draft orders live directly in your native
+                  Zero proprietary databases or detached dashboards. Orders live directly in your native
                   admin workspace where support and sales representatives already operate.
                 </p>
               </div>
@@ -444,7 +451,7 @@ export default function Home() {
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Smart Recovery Rules</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
                   Automate custom incentives based on cart value, customer lifetime spend, or geographical location.
-                  Incentives attach automatically to the generated draft.
+                  Incentives attach automatically to the generated order.
                 </p>
               </div>
 
@@ -456,7 +463,7 @@ export default function Home() {
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Inventory Preservation</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Configure whether draft orders should reserve stock or release items back to the general inventory pool after
+                  Configure whether pending orders should reserve stock or release items back to the general inventory pool after
                   a customizable time window.
                 </p>
               </div>
@@ -469,7 +476,7 @@ export default function Home() {
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Omnichannel Invoicing</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Share draft checkout links across email platforms, customer support desks, messaging channels,
+                  Share direct checkout links across email platforms, customer support desks, messaging channels,
                   or SMS sequences seamlessly.
                 </p>
               </div>
@@ -482,7 +489,7 @@ export default function Home() {
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Actionable Telemetry</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Track recovered revenue, draft conversion velocity, and customer response efficiency with high-contrast,
+                  Track recovered revenue, checkout conversion velocity, and customer response efficiency with high-contrast,
                   actionable reporting.
                 </p>
               </div>
@@ -501,7 +508,7 @@ export default function Home() {
                 Manual Cart Recovery vs. KwikFlow Velocity
               </h2>
               <p className="mt-4 text-base text-[#5F5F58]">
-                See why high-volume storefronts replace standard email reminders with pre-compiled draft orders.
+                See why high-volume storefronts replace standard email reminders with pre-compiled recovery invoices.
               </p>
             </div>
 
@@ -516,7 +523,7 @@ export default function Home() {
                 </thead>
                 <tbody className="divide-y divide-[#E2E2DC] text-sm">
                   <tr>
-                    <td className="py-4 px-6 font-semibold text-[#111111]">Draft Creation Time</td>
+                    <td className="py-4 px-6 font-semibold text-[#111111]">Order Creation Time</td>
                     <td className="py-4 px-6 text-[#73736C]">Manual (15–30 mins/order)</td>
                     <td className="py-4 px-6 font-mono font-bold text-[#087A45] bg-[#FFF7CC]/20">Instant (1.2 seconds)</td>
                   </tr>
@@ -533,12 +540,12 @@ export default function Home() {
                   <tr>
                     <td className="py-4 px-6 font-semibold text-[#111111]">Sales Rep Enablement</td>
                     <td className="py-4 px-6 text-[#73736C]">Requires manual copy-pasting items</td>
-                    <td className="py-4 px-6 font-semibold text-[#111111] bg-[#FFF7CC]/20">Ready in store drafts instantly</td>
+                    <td className="py-4 px-6 font-semibold text-[#111111] bg-[#FFF7CC]/20">Ready in store admin instantly</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-6 font-semibold text-[#111111]">Custom Invoicing &amp; Currencies</td>
                     <td className="py-4 px-6 text-[#73736C]">Complex multi-app setups</td>
-                    <td className="py-4 px-6 font-semibold text-[#111111] bg-[#FFF7CC]/20">Native Draft Order API</td>
+                    <td className="py-4 px-6 font-semibold text-[#111111] bg-[#FFF7CC]/20">Native Storefront Order API</td>
                   </tr>
                 </tbody>
               </table>
@@ -546,7 +553,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── FAQ Section (GEO / Answer-First Optimization) ── */}
+        {/* ── FAQ Section (GEO / Answer-First Optimization + Labeled Search Form) ── */}
         <section id="faq" className="border-t border-[#E2E2DC] bg-[#FAFAF8] py-20 md:py-28">
           <div className="container-max">
             <div className="max-w-2xl">
@@ -559,6 +566,38 @@ export default function Home() {
               <p className="mt-4 text-base text-[#5F5F58]">
                 Clear explanations of how KwikFlow integrates with your e-commerce order workflow.
               </p>
+
+              {/* Labeled Search Form for AI Agents & Users */}
+              <div className="mt-6 max-w-md">
+                <form
+                  role="search"
+                  aria-label="Search recovery documentation and guides"
+                  className="flex items-center gap-2"
+                  action="/"
+                  method="get"
+                >
+                  <label htmlFor="faq-search" className="sr-only">
+                    Search recovery documentation and FAQs
+                  </label>
+                  <input
+                    id="faq-search"
+                    name="q"
+                    type="search"
+                    placeholder="Search guides (e.g. inventory, webhooks)..."
+                    aria-label="Search documentation"
+                    className="w-full rounded-[8px] border border-[#E2E2DC] bg-[#FFFFFF] px-3.5 py-2 text-xs text-[#161614] placeholder-[#73736C] focus:border-[#FFD400] focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    aria-label="Submit search query"
+                    className="btn-primary text-xs h-[36px] px-3.5 shrink-0"
+                    data-toolname="search_documentation"
+                    data-tooldescription="Search KwikFlow technical documentation and recovery guides"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
             </div>
 
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -567,7 +606,7 @@ export default function Home() {
                   What is KwikFlow and how does it operate?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  KwikFlow is an e-commerce automation application that detects high-intent abandoned carts and programmatically transforms them into review-ready native Draft Orders with single-click direct checkout links.
+                  KwikFlow is an e-commerce automation application that detects high-intent abandoned carts and programmatically transforms them into review-ready native recovery orders with single-click direct checkout links.
                 </p>
               </div>
 
@@ -576,22 +615,22 @@ export default function Home() {
                   How does KwikFlow differ from traditional reminder emails?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  Traditional emails direct shoppers back to an empty or unauthenticated cart where they must re-enter details, re-select shipping, and manually input discount codes. KwikFlow creates a native Draft Order with line items, pre-applied incentives, and customer shipping pre-filled.
+                  Traditional emails direct shoppers back to an empty or unauthenticated cart where they must re-enter details, re-select shipping, and manually input discount codes. KwikFlow creates a native completed transaction order with line items, pre-applied incentives, and customer shipping pre-filled.
                 </p>
               </div>
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  How fast does KwikFlow generate draft orders?
+                  How fast does KwikFlow generate recovery orders?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  KwikFlow compiles and generates draft orders in an average of 1.2 seconds following checkout abandonment webhook ingestion, ensuring follow-up links are ready instantly.
+                  KwikFlow compiles and generates recovery orders in an average of 1.2 seconds following checkout abandonment webhook ingestion, ensuring follow-up links are ready instantly.
                 </p>
               </div>
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  Does KwikFlow reserve inventory for pending draft orders?
+                  Does KwikFlow reserve inventory for pending cart orders?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
                   Yes. Merchants can configure custom inventory reservation rules to lock stock during active recovery windows or automatically release items back to the general pool after a customizable period.
@@ -609,10 +648,10 @@ export default function Home() {
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  Can draft links be sent through SMS, WhatsApp, and support desks?
+                  Can checkout links be sent through SMS, WhatsApp, and support desks?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  Yes. Each generated draft order produces a direct checkout URL that your team can dispatch across email flows, support ticketing desks, WhatsApp, or SMS campaigns.
+                  Yes. Each generated recovery order produces a direct checkout URL that your team can dispatch across email flows, support ticketing desks, WhatsApp, or SMS campaigns.
                 </p>
               </div>
             </div>
@@ -647,6 +686,8 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="btn-primary h-[48px] px-6 text-base"
                     aria-label="Install KwikFlow on Shopify"
+                    data-toolname="install_app_cta"
+                    data-tooldescription="Direct link to install KwikFlow app on Shopify Store"
                   >
                     Install KwikFlow for Shopify →
                   </a>
@@ -680,7 +721,7 @@ export default function Home() {
                 Precise, high-velocity cart recovery automation for modern e-commerce storefronts.
               </p>
               <div className="mt-1 font-mono text-[11px] text-[#86918C]">
-                Documented &amp; maintained by KwikFlow Product Operations · Updated September 30, 2026
+                Documented &amp; maintained by KwikFlow Product Operations · Updated October 2026
               </div>
             </div>
 
@@ -697,6 +738,9 @@ export default function Home() {
               <a href="#faq" className="hover:text-[#111111] transition-colors">
                 FAQ
               </a>
+              <Link href="/about" className="hover:text-[#111111] transition-colors">
+                About
+              </Link>
               <a
                 href={SHOPIFY_APP_URL}
                 target="_blank"
@@ -707,6 +751,9 @@ export default function Home() {
               </a>
               <Link href="/privacy-policy" className="hover:text-[#111111] transition-colors">
                 Privacy Policy
+              </Link>
+              <Link href="/terms" className="hover:text-[#111111] transition-colors">
+                Terms of Service
               </Link>
               <a
                 href={`mailto:${SUPPORT_EMAIL}`}

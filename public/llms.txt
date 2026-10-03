@@ -21,15 +21,21 @@ KwikFlow is an operational acceleration system designed for retail merchants on 
 ## Key Links & Resources
 
 - [Official Website](https://kwikflow.io)
+- [About KwikFlow Technologies](https://kwikflow.io/about/)
 - [Official Shopify App Store Listing](https://apps.shopify.com/kwikflow-ai?search_id=67147e87-c79a-4bcb-a2f8-1fa8f0937203&surface_detail=kwikflow&surface_inter_position=1&surface_intra_position=1&surface_type=search)
 - [Privacy Policy & Data Governance](https://kwikflow.io/privacy-policy/)
-- [Complete Technical Documentation](https://kwikflow.io/llms-full.txt)
+- [Terms of Service](https://kwikflow.io/terms/)
 - [AI Summary Definition](https://kwikflow.io/ai/summary.json)
 - [AI Service Manifest](https://kwikflow.io/ai/service.json)
 - [AI FAQ Index](https://kwikflow.io/ai/faq.json)
+
+## Companion Files & Technical Reference
+
+- [llms-full.txt](https://kwikflow.io/llms-full.txt): Complete technical reference and architecture documentation.
+- [.well-known/ai.txt](https://kwikflow.io/.well-known/ai.txt): Machine access policy and AI agent endpoint definitions.
 
 ## Optional Details
 
 Merchants can configure custom webhook listeners, configure rule-based discount triggers based on basket totals (e.g., free shipping on carts exceeding $75), and integrate with customer service platforms like Gorgias, Zendesk, or Klaviyo.
 
-For full API schema definitions and technical specifications, inspect companion file [llms-full.txt](https://kwikflow.io/llms-full.txt).
+For the exhaustive programmatic schema and system specifications, see companion file [llms-full.txt](https://kwikflow.io/llms-full.txt).
