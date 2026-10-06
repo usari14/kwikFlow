@@ -1,6 +1,7 @@
 # KwikFlow
 
 > KwikFlow automates high-intent checkout recovery for modern e-commerce stores by transforming abandoned carts into review-ready native draft orders with single-click checkout links.
+> Optional companion file: [llms-full.txt](https://kwikflow.io/llms-full.txt) provides comprehensive technical reference.
 
 KwikFlow is an operational acceleration system designed for retail merchants on Shopify and Shopify Plus. Rather than sending generic cart reminder emails that force shoppers to manually re-enter their details and re-apply discount codes, KwikFlow programmatically compiles customer data, inventory reservations, and contextual incentives into an immediate Shopify Draft Order.
 
@@ -29,13 +30,11 @@ KwikFlow is an operational acceleration system designed for retail merchants on 
 - [AI Service Manifest](https://kwikflow.io/ai/service.json)
 - [AI FAQ Index](https://kwikflow.io/ai/faq.json)
 
-## Companion Files & Technical Reference
+## Optional
 
-- [llms-full.txt](https://kwikflow.io/llms-full.txt): Complete technical reference and architecture documentation.
+- [llms-full.txt](https://kwikflow.io/llms-full.txt): Full technical reference and architectural documentation.
 - [.well-known/ai.txt](https://kwikflow.io/.well-known/ai.txt): Machine access policy and AI agent endpoint definitions.
-
-## Optional Details
 
 Merchants can configure custom webhook listeners, configure rule-based discount triggers based on basket totals (e.g., free shipping on carts exceeding $75), and integrate with customer service platforms like Gorgias, Zendesk, or Klaviyo.
 
-For the exhaustive programmatic schema and system specifications, see companion file [llms-full.txt](https://kwikflow.io/llms-full.txt).
+For full API schema definitions and technical specifications, see companion file [llms-full.txt](https://kwikflow.io/llms-full.txt).

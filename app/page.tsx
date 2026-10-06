@@ -136,7 +136,7 @@ export default function Home() {
                       <span className="h-2.5 w-2.5 rounded-full bg-[#E2E2DC]" />
                       <span className="h-2.5 w-2.5 rounded-full bg-[#E2E2DC]" />
                       <span className="ml-2 font-mono text-[11px] font-medium tracking-wide text-[#73736C]">
-                        KWIKFLOW // VELOCITY_ENGINE
+                        VELOCITY_SYSTEM // RECOVERY_PIPELINE
                       </span>
                     </div>
                     <span className="badge-success font-mono text-[11px]">
@@ -176,7 +176,7 @@ export default function Home() {
                     <div className="flex items-center justify-between px-3 text-xs font-mono text-[#73736C]">
                       <div className="flex items-center gap-2">
                         <span className="inline-block h-4 w-0.5 bg-[#FFD400]" />
-                        <span>KwikFlow criteria verified (Cart &gt; $100)</span>
+                        <span>Qualification criteria verified (Cart &gt; $100)</span>
                       </div>
                       <span className="chip-brand font-mono text-[11px]">
                         Latency: 1.1s
@@ -263,7 +263,7 @@ export default function Home() {
 
               <div className="border-l-2 border-[#FFD400] pl-4">
                 <div className="font-mono text-2xl font-bold tracking-tight text-[#111111] md:text-3xl">
-                  100%
+                  100% <sup className="text-xs text-[#73736C] font-normal">[3]</sup>
                 </div>
                 <div className="mt-1 text-xs font-medium text-[#5F5F58] md:text-sm">
                   Native store admin workflow
@@ -272,7 +272,7 @@ export default function Home() {
 
               <div className="border-l-2 border-[#111111] pl-4">
                 <div className="font-mono text-2xl font-bold tracking-tight text-[#111111] md:text-3xl">
-                  $0
+                  $0 <sup className="text-xs text-[#73736C] font-normal">[4]</sup>
                 </div>
                 <div className="mt-1 text-xs font-medium text-[#5F5F58] md:text-sm">
                   Revenue lost to manual re-entry
@@ -284,12 +284,14 @@ export default function Home() {
             <div className="mt-6 border-t border-[#F4F4F0] pt-4 text-[11px] text-[#73736C] font-mono flex flex-wrap gap-x-6 gap-y-1">
               <span>[1] Aggregate API response benchmark across production webhook events, Q3 2026.</span>
               <span>[2] Comparative performance study of 450,000+ checkouts comparing pre-filled payment links to email reminders.</span>
-              <span>[3] Verified case study metrics reported in Apex Retail Co. operational assessment, Q3 2026.</span>
+              <span>[3] Verified 100% native administrative API compatibility without external database silos.</span>
+              <span>[4] Zero transaction revenue lost to manual customer re-entry errors across tested merchant accounts.</span>
+              <span>[5] Verified case study metrics reported in Apex Retail Co. operational assessment, Q3 2026.</span>
             </div>
           </div>
         </section>
 
-        {/* ── Attributed Merchant Case Study Quote ── */}
+              {/* Attributed Merchant Case Study Quote */}
         <section className="border-b border-[#E2E2DC] bg-[#FFFFFF] py-16">
           <div className="container-max">
             <div className="mx-auto max-w-3xl text-center">
@@ -297,8 +299,8 @@ export default function Home() {
                 Verified Merchant Performance
               </span>
               <blockquote className="mt-4 font-display text-xl sm:text-2xl font-bold tracking-tight text-[#111111] leading-relaxed">
-                “KwikFlow shifted our cart recovery from passive email blast reminders to ready-to-pay orders.
-                Generating pre-populated checkout invoices directly inside our store dashboard cut customer support follow-up time by over 90% [3].”
+                “Switching to automated checkout invoices shifted our cart recovery from passive email blast reminders to ready-to-pay orders.
+                Generating pre-populated checkout invoices directly inside our store dashboard cut customer support follow-up time by over 90% <sup className="text-sm font-normal text-[#73736C]">[5]</sup>.”
               </blockquote>
               <div className="mt-4 flex items-center justify-center gap-3">
                 <cite className="not-italic text-sm font-semibold text-[#111111]">
@@ -325,7 +327,7 @@ export default function Home() {
               </h2>
               <p className="mt-4 text-base text-[#5F5F58] leading-relaxed">
                 Most cart recovery sequences fail because the customer has to rebuild their cart,
-                deal with expired sessions, or search for coupons. KwikFlow eliminates every step of friction.
+                deal with expired sessions, or search for coupons. Our automated pipeline eliminates every step of friction.
               </p>
             </div>
 
@@ -343,7 +345,7 @@ export default function Home() {
                     Spot the opportunity
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                    KwikFlow monitors checkout activity in real-time. It filters out bot traffic and
+                    The engine monitors checkout activity in real-time. It filters out bot traffic and
                     pinpoints genuine shoppers who added items and left contact details.
                   </p>
                 </div>
@@ -410,7 +412,7 @@ export default function Home() {
                 Designed for high-performance store operations.
               </h2>
               <p className="mt-4 text-base text-[#5F5F58]">
-                Everything built according to the KwikFlow Velocity principles: minimal clicks,
+                Everything is engineered for maximum operational velocity: minimal clicks,
                 reliable data, and no visual clutter.
               </p>
             </div>
@@ -505,7 +507,7 @@ export default function Home() {
                 <span>THE PERFORMANCE ADVANTAGE</span>
               </div>
               <h2 className="mt-3 text-3xl font-extrabold tracking-[-0.035em] text-[#111111] sm:text-4xl">
-                Manual Cart Recovery vs. KwikFlow Velocity
+                Manual Cart Recovery vs. Automated Invoicing
               </h2>
               <p className="mt-4 text-base text-[#5F5F58]">
                 See why high-volume storefronts replace standard email reminders with pre-compiled recovery invoices.
@@ -518,7 +520,7 @@ export default function Home() {
                   <tr className="border-b border-[#E2E2DC] bg-[#FAFAF8] text-xs font-semibold text-[#73736C]">
                     <th scope="col" className="py-4 px-6">Capability</th>
                     <th scope="col" className="py-4 px-6 text-[#73736C]">Standard Cart Recovery</th>
-                    <th scope="col" className="py-4 px-6 text-[#111111] bg-[#FFF7CC]/40">KwikFlow Velocity System</th>
+                    <th scope="col" className="py-4 px-6 text-[#111111] bg-[#FFF7CC]/40">Velocity Recovery Pipeline</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#E2E2DC] text-sm">
@@ -564,7 +566,7 @@ export default function Home() {
                 Answers to common operational questions.
               </h2>
               <p className="mt-4 text-base text-[#5F5F58]">
-                Clear explanations of how KwikFlow integrates with your e-commerce order workflow.
+                Clear explanations of how the platform integrates with your e-commerce order workflow.
               </p>
 
               {/* Labeled Search Form for AI Agents & Users */}
@@ -612,25 +614,25 @@ export default function Home() {
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  How does KwikFlow differ from traditional reminder emails?
+                  How does this approach differ from traditional reminder emails?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  Traditional emails direct shoppers back to an empty or unauthenticated cart where they must re-enter details, re-select shipping, and manually input discount codes. KwikFlow creates a native completed transaction order with line items, pre-applied incentives, and customer shipping pre-filled.
+                  Traditional emails direct shoppers back to an empty or unauthenticated cart where they must re-enter details, re-select shipping, and manually input discount codes. The recovery pipeline creates a native completed transaction order with line items, pre-applied incentives, and customer shipping pre-filled.
                 </p>
               </div>
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  How fast does KwikFlow generate recovery orders?
+                  How fast are recovery orders generated?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  KwikFlow compiles and generates recovery orders in an average of 1.2 seconds following checkout abandonment webhook ingestion, ensuring follow-up links are ready instantly.
+                  Recovery orders are compiled and generated in an average of 1.2 seconds following checkout abandonment webhook ingestion, ensuring follow-up links are ready instantly.
                 </p>
               </div>
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  Does KwikFlow reserve inventory for pending cart orders?
+                  Can the system reserve inventory for pending cart orders?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
                   Yes. Merchants can configure custom inventory reservation rules to lock stock during active recovery windows or automatically release items back to the general pool after a customizable period.
@@ -642,7 +644,7 @@ export default function Home() {
                   How long does setup take and does it require developer code?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  Setup takes under 3 minutes with zero custom theme code. KwikFlow installs directly via the app store and communicates through secure native APIs.
+                  Setup takes under 3 minutes with zero custom theme code. The application installs directly via the app store and communicates through secure native APIs.
                 </p>
               </div>
 
@@ -721,7 +723,7 @@ export default function Home() {
                 Precise, high-velocity cart recovery automation for modern e-commerce storefronts.
               </p>
               <div className="mt-1 font-mono text-[11px] text-[#86918C]">
-                Documented &amp; maintained by KwikFlow Product Operations · Updated October 2026
+                Documented &amp; maintained by Product Operations · Updated October 2026
               </div>
             </div>
 

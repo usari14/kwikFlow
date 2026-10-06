@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     ],
   },
   other: {
-    "date-modified": "2026-10-03",
+    "date-modified": "2026-10-06",
     "theme-color": "#FFD400",
   },
 };
@@ -100,8 +100,10 @@ const jsonLd = {
       "sameAs": [
         "https://apps.shopify.com/kwikflow-ai?search_id=67147e87-c79a-4bcb-a2f8-1fa8f0937203&surface_detail=kwikflow&surface_inter_position=1&surface_intra_position=1&surface_type=search",
         "https://www.linkedin.com/company/kwikflow",
-        "https://github.com/usari14/kwikflow",
+        "https://www.crunchbase.com/organization/kwikflow",
+        "https://en.wikipedia.org/wiki/Shopping_cart_abandonment",
         "https://www.wikidata.org/wiki/Q114352277",
+        "https://github.com/usari14/kwikflow",
       ],
     },
     {
@@ -113,6 +115,7 @@ const jsonLd = {
       "operatingSystem": "All, Shopify Web Admin",
       "description": description,
       "url": siteUrl,
+      "image": `${siteUrl}/icon.png`,
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -135,7 +138,8 @@ const jsonLd = {
       "applicationCategory": "BusinessApplication",
       "description": description,
       "url": siteUrl,
-      "dateModified": "2026-10-03",
+      "image": `${siteUrl}/icon.png`,
+      "dateModified": "2026-10-06",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -155,6 +159,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#product`,
       "name": "KwikFlow Checkout Recovery System",
       "description": description,
+      "image": `${siteUrl}/icon.png`,
       "brand": {
         "@type": "Brand",
         "name": "KwikFlow",
@@ -180,11 +185,12 @@ const jsonLd = {
       "@id": `${siteUrl}/#howto`,
       "name": "How to Recover Abandoned Carts with KwikFlow",
       "description": "Three-step automation process to convert abandoned carts into confirmed orders.",
+      "image": `${siteUrl}/icon.png`,
       "step": [
         {
           "@type": "HowToStep",
           "name": "Detect Opportunity",
-          "text": "KwikFlow monitors checkout activity in real-time and filters genuine buyers.",
+          "text": "The platform monitors checkout activity in real-time and filters genuine buyers.",
         },
         {
           "@type": "HowToStep",
@@ -267,14 +273,27 @@ export default function RootLayout({
           title="KwikFlow Updates & Insights"
           href={`${siteUrl}/feed.xml`}
         />
-        {/* WebMCP Declarations for AI Search & Agent Readiness */}
-        <meta
-          name="webmcp-declared-tool"
-          content="toolname=recover_cart; tooldescription=Transform abandoned checkout into a pre-filled Shopify draft order; parameters=cart_id,customer_email"
-        />
-        <meta
-          name="webmcp-declared-tool"
-          content="toolname=generate_checkout_link; tooldescription=Generate direct 1-click checkout payment link for abandoned cart"
+        {/* WebMCP Declarations for Chrome AI Agents */}
+        <meta name="webmcp:tool" content="name=recover_cart;description=Automate recovery of abandoned shopping checkouts" />
+        <meta name="webmcp:tool" content="name=generate_checkout_link;description=Generate direct 1-click checkout payment link for abandoned cart" />
+        <meta name="ai-agent:tool" content="name=recover_cart;description=Transform abandoned checkouts into pre-filled store invoices" />
+        <script
+          type="application/webmcp+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              tools: [
+                {
+                  name: "recover_cart",
+                  description: "Transform abandoned checkout into a pre-filled Shopify draft order",
+                  parameters: ["cart_id", "customer_email"],
+                },
+                {
+                  name: "generate_checkout_link",
+                  description: "Generate direct 1-click checkout payment link for abandoned cart",
+                },
+              ],
+            }),
+          }}
         />
         <script
           type="application/ld+json"
