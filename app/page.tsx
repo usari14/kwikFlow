@@ -51,8 +51,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="btn-primary"
               aria-label="Get KwikFlow on Shopify App Store"
+              toolname="install_kwikflow"
+              tooldescription="Install KwikFlow on Shopify App Store to automate draft order recovery"
               data-toolname="install_kwikflow"
-              data-tooldescription="Install KwikFlow on Shopify App Store to automate checkout recovery"
+              data-tooldescription="Install KwikFlow on Shopify App Store to automate draft order recovery"
             >
               Get KwikFlow →
             </a>
@@ -81,8 +83,8 @@ export default function Home() {
                 </h1>
 
                 <p className="mt-6 text-lg leading-relaxed text-[#5F5F58] md:text-xl">
-                  KwikFlow instantly transforms high-intent abandoned baskets into review-ready
-                  native recovery orders with single-click checkout links—giving retail teams the fastest path to recovered revenue.
+                  KwikFlow instantly transforms high-intent abandoned checkout sessions into review-ready
+                  native recovery orders with single-click payment links—giving retail teams the fastest path to recovered revenue.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3.5 sm:flex-row sm:items-center">
@@ -92,8 +94,10 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="btn-primary text-[15px]"
                     aria-label="Start recovering carts with KwikFlow"
+                    toolname="recover_cart"
+                    tooldescription="Automate recovery of abandoned baskets into pre-filled invoices"
                     data-toolname="recover_cart"
-                    data-tooldescription="Automate recovery of abandoned checkouts into pre-filled invoices"
+                    data-tooldescription="Automate recovery of abandoned baskets into pre-filled invoices"
                   >
                     Start recovering carts →
                   </a>
@@ -114,7 +118,7 @@ export default function Home() {
                     <svg className="h-4 w-4 text-[#087A45]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
-                    Native Checkout Order API
+                    Native Draft Order API
                   </span>
                   <span className="h-1 w-1 rounded-full bg-[#D1D1CA]" />
                   <span className="flex items-center gap-1.5">
@@ -156,7 +160,7 @@ export default function Home() {
                           </span>
                           <div>
                             <div className="text-sm font-bold text-[#111111]">
-                              Abandoned Checkout Detected
+                              Abandoned Cart Session Detected
                             </div>
                             <div className="font-mono text-xs text-[#73736C]">
                               sarah.miller@retail.co · ID #CK-9204
@@ -179,7 +183,7 @@ export default function Home() {
                         <span>Qualification criteria verified (Cart &gt; $100)</span>
                       </div>
                       <span className="chip-brand font-mono text-[11px]">
-                        Latency: 1.1s
+                        Latency: 1.2s <sup className="text-[9px] font-normal">[1]</sup>
                       </span>
                     </div>
 
@@ -209,9 +213,9 @@ export default function Home() {
                           <span className="font-semibold text-[#087A45]">Free Priority Shipping</span>
                         </div>
                         <div className="flex justify-between items-center text-[#5F5F58] pt-1 border-t border-[#F4F4F0]">
-                          <span>Direct checkout URL:</span>
+                          <span>Direct payment URL:</span>
                           <span className="font-mono text-[11px] text-[#111111] bg-[#F4F4F0] px-1.5 py-0.5 rounded">
-                            checkout.store.com/c/8f9a2
+                            pay.store.com/c/8f9a2
                           </span>
                         </div>
                       </div>
@@ -283,8 +287,8 @@ export default function Home() {
             {/* Scientific Citation Footnote */}
             <div className="mt-6 border-t border-[#F4F4F0] pt-4 text-[11px] text-[#73736C] font-mono flex flex-wrap gap-x-6 gap-y-1">
               <span>[1] Aggregate API response benchmark across production webhook events, Q3 2026.</span>
-              <span>[2] Comparative performance study of 450,000+ checkouts comparing pre-filled payment links to email reminders.</span>
-              <span>[3] Verified 100% native administrative API compatibility without external database silos.</span>
+              <span>[2] Comparative performance study of 450,000+ abandoned carts comparing pre-filled payment links to email reminders.</span>
+              <span>[3] Verified full native administrative API compatibility without external database silos.</span>
               <span>[4] Zero transaction revenue lost to manual customer re-entry errors across tested merchant accounts.</span>
               <span>[5] Verified case study metrics reported in Apex Retail Co. operational assessment, Q3 2026.</span>
             </div>
@@ -299,8 +303,8 @@ export default function Home() {
                 Verified Merchant Performance
               </span>
               <blockquote className="mt-4 font-display text-xl sm:text-2xl font-bold tracking-tight text-[#111111] leading-relaxed">
-                “Switching to automated checkout invoices shifted our cart recovery from passive email blast reminders to ready-to-pay orders.
-                Generating pre-populated checkout invoices directly inside our store dashboard cut customer support follow-up time by over 90% <sup className="text-sm font-normal text-[#73736C]">[5]</sup>.”
+                “Switching to automated draft invoices shifted our recovery workflow from passive email blast reminders to ready-to-pay orders.
+                Generating pre-populated draft invoices directly inside our store dashboard cut customer support follow-up time by over 90% <sup className="text-sm font-normal text-[#73736C]">[5]</sup>.”
               </blockquote>
               <div className="mt-4 flex items-center justify-center gap-3">
                 <cite className="not-italic text-sm font-semibold text-[#111111]">
@@ -323,7 +327,7 @@ export default function Home() {
                 <span>A CLEARER RECOVERY FLOW</span>
               </div>
               <h2 className="mt-3 text-3xl font-extrabold tracking-[-0.035em] text-[#111111] sm:text-4xl">
-                From abandoned checkout to order confirmed in three precise steps.
+                From abandoned cart to order confirmed in three precise steps.
               </h2>
               <p className="mt-4 text-base text-[#5F5F58] leading-relaxed">
                 Most cart recovery sequences fail because the customer has to rebuild their cart,
@@ -345,7 +349,7 @@ export default function Home() {
                     Spot the opportunity
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                    The engine monitors checkout activity in real-time. It filters out bot traffic and
+                    The engine monitors cart abandonment activity in real-time. It filters out bot traffic and
                     pinpoints genuine shoppers who added items and left contact details.
                   </p>
                 </div>
@@ -367,12 +371,12 @@ export default function Home() {
                     Compile the store order
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                    A fully populated checkout invoice is automatically compiled with line items,
+                    A fully populated draft invoice is automatically compiled with line items,
                     customer shipping profile, pre-applied discounts, and inventory holds.
                   </p>
                 </div>
                 <div className="mt-8 border-t border-[#E2E2DC] pt-4 font-mono text-xs text-[#73736C]">
-                  Output: Native Checkout Order + Instant Payment Link
+                  Output: Native Draft Order + Instant Payment Link
                 </div>
               </div>
 
@@ -389,7 +393,7 @@ export default function Home() {
                     Close the sale
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                    Deliver a 1-click checkout invoice link directly to the customer. When they tap,
+                    Deliver a 1-click invoice payment link directly to the customer. When they tap,
                     the order is already locked, discounted, and ready to pay in seconds.
                   </p>
                 </div>
@@ -426,8 +430,8 @@ export default function Home() {
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Sub-Second Execution</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Built on high-speed event queues. As soon as an abandoned checkout event fires,
-                  the recovery invoice is compiled in under 1.4 seconds.
+                  Built on high-speed event queues. As soon as an abandonment event fires,
+                  the recovery invoice is compiled in sub-second automated timeframes [1].
                 </p>
               </div>
 
@@ -478,7 +482,7 @@ export default function Home() {
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Omnichannel Invoicing</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Share direct checkout links across email platforms, customer support desks, messaging channels,
+                  Share direct payment links across email platforms, customer support desks, messaging channels,
                   or SMS sequences seamlessly.
                 </p>
               </div>
@@ -491,7 +495,7 @@ export default function Home() {
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-[#111111]">Actionable Telemetry</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#5F5F58]">
-                  Track recovered revenue, checkout conversion velocity, and customer response efficiency with high-contrast,
+                  Track recovered revenue, basket conversion velocity, and customer response efficiency with high-contrast,
                   actionable reporting.
                 </p>
               </div>
@@ -526,13 +530,13 @@ export default function Home() {
                 <tbody className="divide-y divide-[#E2E2DC] text-sm">
                   <tr>
                     <td className="py-4 px-6 font-semibold text-[#111111]">Order Creation Time</td>
-                    <td className="py-4 px-6 text-[#73736C]">Manual (15–30 mins/order)</td>
-                    <td className="py-4 px-6 font-mono font-bold text-[#087A45] bg-[#FFF7CC]/20">Instant (1.2 seconds)</td>
+                    <td className="py-4 px-6 text-[#73736C]">Manual multi-step creation</td>
+                    <td className="py-4 px-6 font-mono font-bold text-[#087A45] bg-[#FFF7CC]/20">Automated (&lt; 1.5 seconds) <sup className="text-xs font-normal">[1]</sup></td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-6 font-semibold text-[#111111]">Customer Checkout Friction</td>
+                    <td className="py-4 px-6 font-semibold text-[#111111]">Customer Buying Friction</td>
                     <td className="py-4 px-6 text-[#73736C]">Must re-open cart, re-apply coupons</td>
-                    <td className="py-4 px-6 font-semibold text-[#111111] bg-[#FFF7CC]/20">1-click pre-populated checkout</td>
+                    <td className="py-4 px-6 font-semibold text-[#111111] bg-[#FFF7CC]/20">1-click pre-populated invoice</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-6 font-semibold text-[#111111]">Inventory Reservation</td>
@@ -593,6 +597,8 @@ export default function Home() {
                     type="submit"
                     aria-label="Submit search query"
                     className="btn-primary text-xs h-[36px] px-3.5 shrink-0"
+                    toolname="search_documentation"
+                    tooldescription="Search KwikFlow technical documentation and recovery guides"
                     data-toolname="search_documentation"
                     data-tooldescription="Search KwikFlow technical documentation and recovery guides"
                   >
@@ -608,7 +614,7 @@ export default function Home() {
                   What is KwikFlow and how does it operate?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  KwikFlow is an e-commerce automation application that detects high-intent abandoned carts and programmatically transforms them into review-ready native recovery orders with single-click direct checkout links.
+                  KwikFlow is an e-commerce automation application that detects high-intent abandoned checkouts and programmatically transforms them into review-ready native recovery orders with single-click direct payment links.
                 </p>
               </div>
 
@@ -626,7 +632,7 @@ export default function Home() {
                   How fast are recovery orders generated?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  Recovery orders are compiled and generated in an average of 1.2 seconds following checkout abandonment webhook ingestion, ensuring follow-up links are ready instantly.
+                  Recovery orders are compiled and generated in an average of 1.2s <sup className="text-xs font-normal">[1]</sup> following webhook ingestion, ensuring follow-up links are ready instantly.
                 </p>
               </div>
 
@@ -650,10 +656,10 @@ export default function Home() {
 
               <div className="card-surface">
                 <h3 className="text-lg font-bold text-[#111111]">
-                  Can checkout links be sent through SMS, WhatsApp, and support desks?
+                  Can direct payment links be sent through SMS, WhatsApp, and support desks?
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#5F5F58]">
-                  Yes. Each generated recovery order produces a direct checkout URL that your team can dispatch across email flows, support ticketing desks, WhatsApp, or SMS campaigns.
+                  Yes. Each generated recovery order produces a direct payment URL that your team can dispatch across email flows, support ticketing desks, WhatsApp, or SMS campaigns.
                 </p>
               </div>
             </div>
@@ -677,7 +683,7 @@ export default function Home() {
                 </h2>
 
                 <p className="mt-4 text-base text-[#D1D1CA] sm:text-lg">
-                  Join forward-thinking online merchants who turn abandoned checkout traffic
+                  Join forward-thinking online merchants who turn abandoned basket sessions
                   into closed sales without manual friction.
                 </p>
 
@@ -688,6 +694,8 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="btn-primary h-[48px] px-6 text-base"
                     aria-label="Install KwikFlow on Shopify"
+                    toolname="install_kwikflow"
+                    tooldescription="Install KwikFlow on Shopify App Store to automate draft order recovery"
                     data-toolname="install_app_cta"
                     data-tooldescription="Direct link to install KwikFlow app on Shopify Store"
                   >

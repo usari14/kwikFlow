@@ -1,7 +1,10 @@
 # KwikFlow
 
 > KwikFlow automates high-intent checkout recovery for modern e-commerce stores by transforming abandoned carts into review-ready native draft orders with single-click checkout links.
+> Companion file: [llms-full.txt](https://kwikflow.io/llms-full.txt)
+> Companion files: [llms-full.txt](https://kwikflow.io/llms-full.txt)
 > Optional companion file: [llms-full.txt](https://kwikflow.io/llms-full.txt) provides comprehensive technical reference.
+> Full technical documentation: [llms-full.txt](https://kwikflow.io/llms-full.txt)
 
 KwikFlow is an operational acceleration system designed for retail merchants on Shopify and Shopify Plus. Rather than sending generic cart reminder emails that force shoppers to manually re-enter their details and re-apply discount codes, KwikFlow programmatically compiles customer data, inventory reservations, and contextual incentives into an immediate Shopify Draft Order.
 

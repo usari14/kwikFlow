@@ -56,8 +56,11 @@ export const metadata: Metadata = {
     ],
   },
   other: {
-    "date-modified": "2026-10-06",
+    "date-modified": "2026-10-08",
     "theme-color": "#FFD400",
+    "webmcp": "https://kwikflow.io/ai/webmcp.json",
+    "webmcp-declaration": "https://kwikflow.io/ai/webmcp.json",
+    "webmcp-tools": "install_kwikflow,recover_cart,search_documentation",
   },
 };
 
@@ -281,18 +284,35 @@ export default function RootLayout({
           type="application/webmcp+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
+              name: "KwikFlow WebMCP Tools",
               tools: [
                 {
-                  name: "recover_cart",
-                  description: "Transform abandoned checkout into a pre-filled Shopify draft order",
-                  parameters: ["cart_id", "customer_email"],
+                  name: "install_kwikflow",
+                  description: "Install KwikFlow on Shopify App Store to automate checkout recovery",
                 },
                 {
-                  name: "generate_checkout_link",
-                  description: "Generate direct 1-click checkout payment link for abandoned cart",
+                  name: "recover_cart",
+                  description: "Automate recovery of abandoned checkouts into pre-filled invoices",
+                },
+                {
+                  name: "search_documentation",
+                  description: "Search KwikFlow technical documentation and recovery guides",
                 },
               ],
             }),
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.registerTool = window.registerTool || function(name, description) {
+                window.__webmcp_tools = window.__webmcp_tools || {};
+                window.__webmcp_tools[name] = { name: name, description: description };
+              };
+              registerTool("install_kwikflow", "Install KwikFlow on Shopify App Store to automate checkout recovery");
+              registerTool("recover_cart", "Automate recovery of abandoned checkouts into pre-filled invoices");
+              registerTool("search_documentation", "Search KwikFlow technical documentation and recovery guides");
+            `,
           }}
         />
         <script

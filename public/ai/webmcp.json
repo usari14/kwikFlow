@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "KwikFlow WebMCP Tools",
+  "version": "1.0.0",
+  "description": "WebMCP agentic tool declarations for KwikFlow Shopify Recovery Application",
+  "tools": [
+    {
+      "name": "install_kwikflow",
+      "description": "Install KwikFlow from the official Shopify App Store to automate checkout recovery",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "shop": {
+            "type": "string",
+            "description": "Shopify store myshopify domain"
+          }
+        }
+      },
+      "action": {
+        "type": "url",
+        "target": "https://apps.shopify.com/kwikflow-ai?search_id=67147e87-c79a-4bcb-a2f8-1fa8f0937203&surface_detail=kwikflow&surface_inter_position=1&surface_intra_position=1&surface_type=search"
+      }
+    },
+    {
+      "name": "recover_cart",
+      "description": "Trigger programmatic recovery of an abandoned checkout into a pre-filled draft invoice",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "checkout_id": {
+            "type": "string",
+            "description": "Shopify checkout token or basket identifier"
+          }
+        }
+      },
+      "action": {
+        "type": "navigate",
+        "target": "https://kwikflow.io/#pipeline"
+      }
+    },
+    {
+      "name": "search_documentation",
+      "description": "Search KwikFlow technical documentation and recovery guides",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "description": "Query keyword to look up"
+          }
+        },
+        "required": ["q"]
+      },
+      "action": {
+        "type": "url",
+        "target": "https://kwikflow.io/?q={q}"
+      }
+    }
+  ]
+}

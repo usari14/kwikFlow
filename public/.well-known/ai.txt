@@ -8,5 +8,8 @@ llms-full-txt: https://kwikflow.io/llms-full.txt
 ai-summary: https://kwikflow.io/ai/summary.json
 ai-faq: https://kwikflow.io/ai/faq.json
 ai-service: https://kwikflow.io/ai/service.json
+ai-webmcp: https://kwikflow.io/ai/webmcp.json
+webmcp: https://kwikflow.io/ai/webmcp.json
+webmcp-declaration: https://kwikflow.io/ai/webmcp.json
 sitemap: https://kwikflow.io/sitemap.xml
 contact: support@kwikflow.io
